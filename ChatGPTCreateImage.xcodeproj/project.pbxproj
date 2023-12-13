@@ -11,6 +11,17 @@
 		1D0D24A72B296DE800CCA5B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24A62B296DE800CCA5B6 /* ContentView.swift */; };
 		1D0D24A92B296DEA00CCA5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D24A82B296DEA00CCA5B6 /* Assets.xcassets */; };
 		1D0D24AC2B296DEA00CCA5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D24AB2B296DEA00CCA5B6 /* Preview Assets.xcassets */; };
+		1D0D24B32B296E2600CCA5B6 /* Application.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D24B22B296E2600CCA5B6 /* Application.plist */; };
+		1D0D24B52B29708800CCA5B6 /* HTTPRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24B42B29708800CCA5B6 /* HTTPRequestBody.swift */; };
+		1D0D24B72B29724C00CCA5B6 /* APICliant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24B62B29724C00CCA5B6 /* APICliant.swift */; };
+		1D0D24BA2B2972B100CCA5B6 /* GetPlistValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24B92B2972B100CCA5B6 /* GetPlistValue.swift */; };
+		1D0D24BD2B2973EE00CCA5B6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24BC2B2973EE00CCA5B6 /* Common.swift */; };
+		1D0D24C02B29CB2800CCA5B6 /* CommunicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24BF2B29CB2800CCA5B6 /* CommunicationError.swift */; };
+		1D0D24C32B29CF7A00CCA5B6 /* ChatGPTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24C22B29CF7A00CCA5B6 /* ChatGPTResponse.swift */; };
+		1D0D24C62B29D1DD00CCA5B6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24C52B29D1DD00CCA5B6 /* ContentViewModel.swift */; };
+		1D0D24C82B29DDB500CCA5B6 /* EncodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24C72B29DDB500CCA5B6 /* EncodeURL.swift */; };
+		1D0D24CF2B29F86600CCA5B6 /* ObtainedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */; };
+		1D0D24D12B29FD3800CCA5B6 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,17 @@
 		1D0D24A62B296DE800CCA5B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D0D24A82B296DEA00CCA5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D0D24AB2B296DEA00CCA5B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D0D24B22B296E2600CCA5B6 /* Application.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Application.plist; sourceTree = "<group>"; };
+		1D0D24B42B29708800CCA5B6 /* HTTPRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestBody.swift; sourceTree = "<group>"; };
+		1D0D24B62B29724C00CCA5B6 /* APICliant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICliant.swift; sourceTree = "<group>"; };
+		1D0D24B92B2972B100CCA5B6 /* GetPlistValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlistValue.swift; sourceTree = "<group>"; };
+		1D0D24BC2B2973EE00CCA5B6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		1D0D24BF2B29CB2800CCA5B6 /* CommunicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationError.swift; sourceTree = "<group>"; };
+		1D0D24C22B29CF7A00CCA5B6 /* ChatGPTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTResponse.swift; sourceTree = "<group>"; };
+		1D0D24C52B29D1DD00CCA5B6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		1D0D24C72B29DDB500CCA5B6 /* EncodeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeURL.swift; sourceTree = "<group>"; };
+		1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainedImageView.swift; sourceTree = "<group>"; };
+		1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +75,11 @@
 			children = (
 				1D0D24A42B296DE800CCA5B6 /* ChatGPTCreateImageApp.swift */,
 				1D0D24A62B296DE800CCA5B6 /* ContentView.swift */,
+				1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */,
+				1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */,
+				1D0D24B22B296E2600CCA5B6 /* Application.plist */,
+				1D0D24C42B29D1CE00CCA5B6 /* ViewModel */,
+				1D0D24BB2B2972BA00CCA5B6 /* Model */,
 				1D0D24A82B296DEA00CCA5B6 /* Assets.xcassets */,
 				1D0D24AA2B296DEA00CCA5B6 /* Preview Content */,
 			);
@@ -65,6 +92,52 @@
 				1D0D24AB2B296DEA00CCA5B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D0D24B82B29726600CCA5B6 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D24B42B29708800CCA5B6 /* HTTPRequestBody.swift */,
+				1D0D24B62B29724C00CCA5B6 /* APICliant.swift */,
+				1D0D24C72B29DDB500CCA5B6 /* EncodeURL.swift */,
+				1D0D24C22B29CF7A00CCA5B6 /* ChatGPTResponse.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		1D0D24BB2B2972BA00CCA5B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D24C12B29CB3A00CCA5B6 /* Error */,
+				1D0D24B82B29726600CCA5B6 /* Communication */,
+				1D0D24BE2B29741000CCA5B6 /* Plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D0D24BE2B29741000CCA5B6 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D24BC2B2973EE00CCA5B6 /* Common.swift */,
+				1D0D24B92B2972B100CCA5B6 /* GetPlistValue.swift */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		1D0D24C12B29CB3A00CCA5B6 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D24BF2B29CB2800CCA5B6 /* CommunicationError.swift */,
+			);
+			name = Error;
+			sourceTree = "<group>";
+		};
+		1D0D24C42B29D1CE00CCA5B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D24C52B29D1DD00CCA5B6 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0D24B32B296E2600CCA5B6 /* Application.plist in Resources */,
 				1D0D24AC2B296DEA00CCA5B6 /* Preview Assets.xcassets in Resources */,
 				1D0D24A92B296DEA00CCA5B6 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +211,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0D24BA2B2972B100CCA5B6 /* GetPlistValue.swift in Sources */,
 				1D0D24A72B296DE800CCA5B6 /* ContentView.swift in Sources */,
+				1D0D24C32B29CF7A00CCA5B6 /* ChatGPTResponse.swift in Sources */,
+				1D0D24B52B29708800CCA5B6 /* HTTPRequestBody.swift in Sources */,
+				1D0D24D12B29FD3800CCA5B6 /* PromptView.swift in Sources */,
 				1D0D24A52B296DE800CCA5B6 /* ChatGPTCreateImageApp.swift in Sources */,
+				1D0D24C82B29DDB500CCA5B6 /* EncodeURL.swift in Sources */,
+				1D0D24C62B29D1DD00CCA5B6 /* ContentViewModel.swift in Sources */,
+				1D0D24BD2B2973EE00CCA5B6 /* Common.swift in Sources */,
+				1D0D24C02B29CB2800CCA5B6 /* CommunicationError.swift in Sources */,
+				1D0D24CF2B29F86600CCA5B6 /* ObtainedImageView.swift in Sources */,
+				1D0D24B72B29724C00CCA5B6 /* APICliant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +359,7 @@
 				DEVELOPMENT_TEAM = VQ2YTWN4JZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真を保存するために使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +389,7 @@
 				DEVELOPMENT_TEAM = VQ2YTWN4JZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真を保存するために使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
