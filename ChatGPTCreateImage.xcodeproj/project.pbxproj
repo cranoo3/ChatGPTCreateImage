@@ -81,10 +81,8 @@
 				1D26954B2B2B415D00607BA0 /* Info.plist */,
 				1D0D24A42B296DE800CCA5B6 /* ChatGPTCreateImageApp.swift */,
 				1D0D24A62B296DE800CCA5B6 /* ContentView.swift */,
-				1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */,
-				1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */,
-				1D26954F2B2B631500607BA0 /* ImageView.swift */,
 				1D0D24B22B296E2600CCA5B6 /* Application.plist */,
+				1D2695512B2B6D3C00607BA0 /* Views */,
 				1D0D24C42B29D1CE00CCA5B6 /* ViewModel */,
 				1D0D24BB2B2972BA00CCA5B6 /* Model */,
 				1D0D24A82B296DEA00CCA5B6 /* Assets.xcassets */,
@@ -154,6 +152,16 @@
 				1D26954C2B2B41F100607BA0 /* ImageSaver.swift */,
 			);
 			path = Saver;
+			sourceTree = "<group>";
+		};
+		1D2695512B2B6D3C00607BA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */,
+				1D26954F2B2B631500607BA0 /* ImageView.swift */,
+				1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
