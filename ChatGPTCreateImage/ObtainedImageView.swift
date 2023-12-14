@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ObtainedImageView: View {
     @ObservedObject var viewModel: ContentViewModel
     
     var body: some View {
         ZStack {
+            // onTapGestureでキーボードをしまえるようにするために背景色を追加している
             Color.white
                 .opacity(0.01)
             
@@ -30,26 +32,28 @@ struct ObtainedImageView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                
-                
-                AsyncImage(url: URL(string: viewModel.imageUrlString)) { image in
-                    VStack {
-                        // 取得した画像
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(maxWidth: .infinity)
+                // 写真を表示する
+                ImageView(viewModel: self.viewModel)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    
+                // 写真を保存するボタン
+                Button(){
+                    viewModel.saveImage()
+                } label: {
+                    HStack {
+                        Image(systemName: "square.and.arrow.down")
+                        Text("画像を保存する")
                     }
-                } placeholder: {
-                    if viewModel.isFetching {
-                        ProgressView()
-                    }
+                    .padding()
+                    .backgroundStyle(.ultraThinMaterial)
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .center)
+                .disabled(!viewModel.saveImageDecision())
+                .clipShape(RoundedRectangle(cornerRadius: 25.0))
+                .frame(maxWidth: .infinity, alignment: .center)
                 
                 Spacer()
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(alignment: .leading)
             .padding(.horizontal)
         }
     }

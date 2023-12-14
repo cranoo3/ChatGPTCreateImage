@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
-struct APICliant {
+struct APIClient {
     // MARK: - PlistのValueを取得する
     let urlString = GetPlistValue.shared.getUrlString()
     let apiKey = GetPlistValue.shared.getApiKey()
@@ -15,7 +16,11 @@ struct APICliant {
     let model = GetPlistValue.shared.getGPTModel()
     
     // MARK: - URLを作成するstruct
-    /// `encodeUrl.makeURLComponents(urlString: self.urlString)`でURLを作成
+    /// ## 使い方
+    /// ```swift: Swift
+    /// encodeUrl.makeURLComponents(urlString: "変換したいURL")
+    /// ```
+    /// でStringからURLComponentsを作成する
     let encodeUrl = EncodeURL()
     
     // MARK: - Fetch
@@ -28,7 +33,7 @@ struct APICliant {
             // MARK: httpBodyを作成
             var requestBody: Data? {
                 // MARK: サンプルデータ
-                let encodeValue = HTTPRequestBody(model: self.model, prompt: prompt, n: 1, size: "1024x1024")
+                let encodeValue = HTTPRequestBody(model: model, prompt: prompt, n: 1, size: "1024x1024")
                 return try? JSONEncoder().encode(encodeValue)
             }
             
@@ -63,4 +68,21 @@ struct APICliant {
         }
     }
     
+    // MARK: - fetchImageData
+    /// urlの文字列からデータを取得する
+    func fetchImageData(imageUrl: String) async -> Result<UIImage, Error> {
+        guard let url = try? encodeUrl.makeURLComponents(urlString: imageUrl).url else {
+            return .failure(CommunicationError.cannotCreateURL)
+        }
+        
+        guard let (data, _) = try? await URLSession.shared.data(from: url) else {
+            return .failure(CommunicationError.badURL)
+        }
+        
+        guard let uiImageData = UIImage(data: data) else {
+            return .failure(CommunicationError.fetchError)
+        }
+        
+        return .success(uiImageData)
+    }
 }

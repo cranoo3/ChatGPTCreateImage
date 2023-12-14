@@ -13,7 +13,7 @@
 		1D0D24AC2B296DEA00CCA5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D24AB2B296DEA00CCA5B6 /* Preview Assets.xcassets */; };
 		1D0D24B32B296E2600CCA5B6 /* Application.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D24B22B296E2600CCA5B6 /* Application.plist */; };
 		1D0D24B52B29708800CCA5B6 /* HTTPRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24B42B29708800CCA5B6 /* HTTPRequestBody.swift */; };
-		1D0D24B72B29724C00CCA5B6 /* APICliant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24B62B29724C00CCA5B6 /* APICliant.swift */; };
+		1D0D24B72B29724C00CCA5B6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24B62B29724C00CCA5B6 /* APIClient.swift */; };
 		1D0D24BA2B2972B100CCA5B6 /* GetPlistValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24B92B2972B100CCA5B6 /* GetPlistValue.swift */; };
 		1D0D24BD2B2973EE00CCA5B6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24BC2B2973EE00CCA5B6 /* Common.swift */; };
 		1D0D24C02B29CB2800CCA5B6 /* CommunicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24BF2B29CB2800CCA5B6 /* CommunicationError.swift */; };
@@ -22,6 +22,8 @@
 		1D0D24C82B29DDB500CCA5B6 /* EncodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24C72B29DDB500CCA5B6 /* EncodeURL.swift */; };
 		1D0D24CF2B29F86600CCA5B6 /* ObtainedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */; };
 		1D0D24D12B29FD3800CCA5B6 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */; };
+		1D26954D2B2B41F100607BA0 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26954C2B2B41F100607BA0 /* ImageSaver.swift */; };
+		1D2695502B2B631500607BA0 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26954F2B2B631500607BA0 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +34,7 @@
 		1D0D24AB2B296DEA00CCA5B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D0D24B22B296E2600CCA5B6 /* Application.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Application.plist; sourceTree = "<group>"; };
 		1D0D24B42B29708800CCA5B6 /* HTTPRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestBody.swift; sourceTree = "<group>"; };
-		1D0D24B62B29724C00CCA5B6 /* APICliant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICliant.swift; sourceTree = "<group>"; };
+		1D0D24B62B29724C00CCA5B6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1D0D24B92B2972B100CCA5B6 /* GetPlistValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlistValue.swift; sourceTree = "<group>"; };
 		1D0D24BC2B2973EE00CCA5B6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		1D0D24BF2B29CB2800CCA5B6 /* CommunicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationError.swift; sourceTree = "<group>"; };
@@ -41,6 +43,9 @@
 		1D0D24C72B29DDB500CCA5B6 /* EncodeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeURL.swift; sourceTree = "<group>"; };
 		1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainedImageView.swift; sourceTree = "<group>"; };
 		1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		1D26954B2B2B415D00607BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1D26954C2B2B41F100607BA0 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		1D26954F2B2B631500607BA0 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +78,12 @@
 		1D0D24A32B296DE800CCA5B6 /* ChatGPTCreateImage */ = {
 			isa = PBXGroup;
 			children = (
+				1D26954B2B2B415D00607BA0 /* Info.plist */,
 				1D0D24A42B296DE800CCA5B6 /* ChatGPTCreateImageApp.swift */,
 				1D0D24A62B296DE800CCA5B6 /* ContentView.swift */,
 				1D0D24D02B29FD3800CCA5B6 /* PromptView.swift */,
 				1D0D24CE2B29F86600CCA5B6 /* ObtainedImageView.swift */,
+				1D26954F2B2B631500607BA0 /* ImageView.swift */,
 				1D0D24B22B296E2600CCA5B6 /* Application.plist */,
 				1D0D24C42B29D1CE00CCA5B6 /* ViewModel */,
 				1D0D24BB2B2972BA00CCA5B6 /* Model */,
@@ -97,8 +104,9 @@
 		1D0D24B82B29726600CCA5B6 /* Communication */ = {
 			isa = PBXGroup;
 			children = (
+				1D0D24BC2B2973EE00CCA5B6 /* Common.swift */,
 				1D0D24B42B29708800CCA5B6 /* HTTPRequestBody.swift */,
-				1D0D24B62B29724C00CCA5B6 /* APICliant.swift */,
+				1D0D24B62B29724C00CCA5B6 /* APIClient.swift */,
 				1D0D24C72B29DDB500CCA5B6 /* EncodeURL.swift */,
 				1D0D24C22B29CF7A00CCA5B6 /* ChatGPTResponse.swift */,
 			);
@@ -108,6 +116,7 @@
 		1D0D24BB2B2972BA00CCA5B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1D26954E2B2B430D00607BA0 /* Saver */,
 				1D0D24C12B29CB3A00CCA5B6 /* Error */,
 				1D0D24B82B29726600CCA5B6 /* Communication */,
 				1D0D24BE2B29741000CCA5B6 /* Plist */,
@@ -118,7 +127,6 @@
 		1D0D24BE2B29741000CCA5B6 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				1D0D24BC2B2973EE00CCA5B6 /* Common.swift */,
 				1D0D24B92B2972B100CCA5B6 /* GetPlistValue.swift */,
 			);
 			path = Plist;
@@ -138,6 +146,14 @@
 				1D0D24C52B29D1DD00CCA5B6 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1D26954E2B2B430D00607BA0 /* Saver */ = {
+			isa = PBXGroup;
+			children = (
+				1D26954C2B2B41F100607BA0 /* ImageSaver.swift */,
+			);
+			path = Saver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,8 +237,10 @@
 				1D0D24C62B29D1DD00CCA5B6 /* ContentViewModel.swift in Sources */,
 				1D0D24BD2B2973EE00CCA5B6 /* Common.swift in Sources */,
 				1D0D24C02B29CB2800CCA5B6 /* CommunicationError.swift in Sources */,
+				1D26954D2B2B41F100607BA0 /* ImageSaver.swift in Sources */,
 				1D0D24CF2B29F86600CCA5B6 /* ObtainedImageView.swift in Sources */,
-				1D0D24B72B29724C00CCA5B6 /* APICliant.swift in Sources */,
+				1D2695502B2B631500607BA0 /* ImageView.swift in Sources */,
+				1D0D24B72B29724C00CCA5B6 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +377,8 @@
 				DEVELOPMENT_TEAM = VQ2YTWN4JZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真を保存するために使用します";
+				INFOPLIST_FILE = ChatGPTCreateImage/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "写真を保存するために使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -389,7 +408,8 @@
 				DEVELOPMENT_TEAM = VQ2YTWN4JZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真を保存するために使用します";
+				INFOPLIST_FILE = ChatGPTCreateImage/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "写真を保存するために使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

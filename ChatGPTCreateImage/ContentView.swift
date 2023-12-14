@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
-    @State var isShowAlert = false
     @FocusState var focas
     
     var body: some View {
@@ -55,6 +54,14 @@ struct ContentView: View {
             
         } message: {
             Text(viewModel.errorMessage ?? "エラーです")
+        }
+        // 保存に成功したことを知らせるアラート
+        .alert("保存に成功しました", isPresented: $viewModel.isSuccessSaveAlert) {
+            Button("OK") {
+                viewModel.isSuccessSaveAlert = false
+            }
+        } message: {
+            Text("画像の保存に成功しました")
         }
     }
 }

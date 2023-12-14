@@ -14,7 +14,7 @@ struct PromptView: View {
     var body: some View {
         ZStack {
             HStack {
-                TextField("出力したい画像のプロンプトを入力", text: $viewModel.forTextField)
+                TextField("出力したい画像のプロンプトを入力", text: $viewModel.inputParameter)
                     .onSubmit {
                         if viewModel.fetchDecision() {
                             viewModel.fetchData()

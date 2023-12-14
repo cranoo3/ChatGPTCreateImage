@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct EncodeURL {
-    // URLを作成
+    /// URLを作成
     func makeURLComponents(urlString: String) throws -> URLComponents {
         // String型をURL型に変換する
         var urlResult: Result<URL, Error> {

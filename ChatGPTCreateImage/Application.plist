@@ -5,7 +5,7 @@
 	<key>url</key>
 	<string>https://api.openai.com/v1/images/generations</string>
 	<key>model</key>
-	<string>dall-e-2</string>
+	<string>dall-e-3</string>
 	<key>apiKey</key>
 	<string></string>
 	<key>organizationID</key>
