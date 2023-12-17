@@ -46,3 +46,8 @@ Swift| Swift 5.9
 まだまだ参考にしたサイトはあるので今後追加します
 
 - [OpenAI 公式APIリファレンス Images](https://platform.openai.com/docs/api-reference/images/object)
+
+- [【SwiftUI】Data型とUIImage型を相互変換して、画像をデータとして保存したりデータから画像を取得して表示したりする方法](https://zenn.dev/z_ypi/articles/7eb77c26918969)
+
+- [【SwiftUI】画像をカメラロールに保存する。](https://byceclorets.com/swift/save-image/)
+- [How to save images to the user’s photo library](https://www.hackingwithswift.com/books/ios-swiftui/how-to-save-images-to-the-users-photo-library)
