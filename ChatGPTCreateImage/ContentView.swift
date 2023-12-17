@@ -22,8 +22,6 @@ struct ContentView: View {
                     .opacity(0.2)
                 
                 VStack {
-                    Spacer()
-                    
                     // 画像を表示する
                     ObtainedImageView(viewModel: self.viewModel)
                         .onTapGesture(perform: {
@@ -34,6 +32,7 @@ struct ContentView: View {
                     
                     // プロンプト入力欄
                     PromptView(viewModel: self.viewModel, focas: self._focas)
+                    
                 }
                 
             }

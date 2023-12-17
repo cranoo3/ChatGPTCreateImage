@@ -34,8 +34,9 @@ struct ObtainedImageView: View {
                 
                 // 写真を表示する
                 ImageView(viewModel: self.viewModel)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    
+                
+                Spacer()
+                
                 // 写真を保存するボタン
                 Button(){
                     viewModel.saveImage()

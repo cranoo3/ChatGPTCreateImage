@@ -16,7 +16,9 @@ struct ImageView: View {
             // フェッチしてない → Imageを表示する
             if !viewModel.isFetching {
                 // フェッチしてない
-                Image(uiImage: viewModel.uiImage)
+                // FIXME: 画像を直して!
+//                Image(uiImage: viewModel.uiImage)
+                Image("SampleImage")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 
